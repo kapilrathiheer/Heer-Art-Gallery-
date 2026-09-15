@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heer Art Gallery — Handmade Wall Art & Mixed Media</title>
+<meta name="description" content="Heer Art Gallery — original paintings, handmade wall art and mixed media pieces, inspired by nature and made with love. DM for orders and collaborations.">
+<link rel="icon" href="images/logo-small.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">
+      <img src="images/logo-small.jpg" alt="Heer Art Gallery logo">
+      <span>Heer<span class="tag">Artist &amp; Storyteller</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav class="main-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="hero-eyebrow">Every artwork tells a story</p>
+      <h1>Handmade wall art, painted slowly and kept close to nature.</h1>
+      <p class="lede">Mixed media paintings and nature-inspired sculpture, made one piece at a time. Each work is original — nothing here is printed or reproduced.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="gallery.html">View the gallery</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/heer.artgallery" target="_blank" rel="noopener">Message on Instagram</a>
+      </div>
+    </div>
+    <div class="hero-frame">
+      <div class="frame-inner">
+        <img src="images/logo.jpg" alt="Heer Art Gallery — every artwork tells a story">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Browse by kind</h2>
+      <p class="section-note">From framed paintings to small pieces made for gifting.</p>
+    </div>
+    <div class="category-tiles">
+      <a class="category-tile" href="gallery.html?category=Painting">
+        <svg viewBox="0 0 64 64" fill="none" stroke="var(--rust)"><path d="M32 6C17 6 6 17 6 30c0 8 5 11 10 11 3 0 4-2 4-4s-2-3-2-6c0-9 8-16 18-16 9 0 15 6 15 13 0 10-8 16-19 16-1.5 0-3-.1-4-.3" stroke-width="2.2" stroke-linecap="round"/><circle cx="20" cy="26" r="2.6" fill="var(--rust)"/><circle cx="30" cy="18" r="2.6" fill="var(--rust)"/><circle cx="41" cy="21" r="2.6" fill="var(--rust)"/><circle cx="46" cy="31" r="2.6" fill="var(--rust)"/></svg>
+        <h3>Painting</h3>
+        <p>Original acrylic and mixed-media paintings on canvas, in a range of sizes.</p>
+      </a>
+      <a class="category-tile" href="gallery.html?category=Home Decor">
+        <svg viewBox="0 0 64 64" fill="none" stroke="var(--sage)"><path d="M32 8c9 8 15 15 15 23a15 15 0 1 1-30 0c0-8 6-15 15-23Z" stroke-width="2.2"/><path d="M32 46v10M24 56h16" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <h3>Home Decor</h3>
+        <p>Wall sculpture and nature-formed pieces for a shelf, console or reading corner.</p>
+      </a>
+      <a class="category-tile" href="gallery.html?category=Gifting">
+        <svg viewBox="0 0 64 64" fill="none" stroke="var(--rose)"><rect x="10" y="26" width="44" height="30" stroke-width="2.2"/><path d="M10 26h44M32 26v30" stroke-width="2.2"/><path d="M32 26c-4-10-20-10-20-1 0 4 8 1 20 1Zm0 0c4-10 20-10 20-1 0 4-8 1-20 1Z" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        <h3>Gifting</h3>
+        <p>Small keepsake pieces made to order — for anniversaries, housewarmings and thank-yous.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Recently added</h2>
+      <p class="section-note"><a href="gallery.html" style="border-bottom:1px solid var(--ink);">See the full gallery →</a></p>
+    </div>
+    <div class="gallery-grid" id="home-preview-grid"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year"></span> Heer Art Gallery</span>
+    <span><a href="https://www.instagram.com/heer.artgallery" target="_blank" rel="noopener">@heer.artgallery</a> · DM for orders &amp; collabs</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

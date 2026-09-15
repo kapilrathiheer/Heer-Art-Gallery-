@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Heer Art Gallery</title>
+<meta name="description" content="Browse original paintings, home decor and gifting pieces from Heer Art Gallery.">
+<link rel="icon" href="images/logo-small.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">
+      <img src="images/logo-small.jpg" alt="Heer Art Gallery logo">
+      <span>Heer<span class="tag">Artist &amp; Storyteller</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section" style="padding-bottom:1rem;">
+  <div class="wrap">
+    <p class="hero-eyebrow">The gallery</p>
+    <h1 style="font-size:clamp(2rem,4vw,2.8rem);">Every piece here is one of a kind.</h1>
+    <p class="lede" style="margin-top:0.8rem;">Prices vary by size for paintings. Home decor and gifting pieces are priced individually. Tap enquire to message directly on Instagram.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:1rem;">
+  <div class="wrap">
+    <div class="filter-row" id="filter-row"></div>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year"></span> Heer Art Gallery</span>
+    <span><a href="https://www.instagram.com/heer.artgallery" target="_blank" rel="noopener">@heer.artgallery</a> · DM for orders &amp; collabs</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
