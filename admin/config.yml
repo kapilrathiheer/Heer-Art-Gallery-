@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where the admin panel stores uploaded photos, and the URL
+# the website should use to display them.
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Publish saved changes immediately (no draft/review step).
+publish_mode: simple
+
+collections:
+  - name: "gallery"
+    label: "Gallery"
+    description: "Add, edit or remove paintings and pieces shown on the website."
+    files:
+      - file: "content/gallery.json"
+        label: "Artworks"
+        name: "artworks"
+        fields:
+          - label: "Artworks"
+            name: "artworks"
+            widget: "list"
+            label_singular: "Artwork"
+            summary: "{{title}} — {{category}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options: ["Painting", "Home Decor", "Gifting"]
+              - { label: "Medium / details (e.g. 'Acrylic on canvas')", name: "medium", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Photo", name: "image", widget: "image", required: false }
+              - { label: "Sold", name: "sold", widget: "boolean", default: false }
+              - { label: "Hide from website", name: "hidden", widget: "boolean", default: false }
+              - label: "Pricing"
+                name: "pricing_type"
+                widget: "select"
+                default: "single"
+                options:
+                  - { label: "One price", value: "single" }
+                  - { label: "Different price per size", value: "by_size" }
+              - { label: "Price (only if 'One price' selected)", name: "price", widget: "number", value_type: "int", required: false }
+              - label: "Sizes & prices (only if 'Different price per size' selected)"
+                name: "sizes"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Size (e.g. '12x16 in')", name: "size", widget: "string" }
+                  - { label: "Price", name: "price", widget: "number", value_type: "int" }
